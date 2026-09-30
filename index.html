@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0d10">
+<meta name="description" content="Reality Show Ke Khabar — Hasi Bhi, Sach Bhi.">
+<title>Reality Show Ke Khabar</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="top-line"></div>
+<header class="site-header">
+ <div class="header-inner">
+  <a class="brand" href="#"><span class="brand-mark">R</span><span><strong>REALITY SHOW KE KHABAR</strong><small>HASI BHI, SACH BHI</small></span></a>
+  <div class="header-actions"><button class="icon-btn" id="searchToggle" aria-label="Open search">⌕</button><button class="menu-btn" id="menuToggle" aria-label="Open menu"><span></span><span></span><span></span></button></div>
+ </div>
+ <div class="search-wrap" id="searchWrap"><input id="searchInput" type="search" placeholder="Search reality-show news..." autocomplete="off"></div>
+</header>
+<nav class="category-nav" id="categoryNav" aria-label="Categories">
+ <button class="cat active" data-category="All">All</button><button class="cat" data-category="Bigg Boss">Bigg Boss</button><button class="cat" data-category="TV">TV</button><button class="cat" data-category="Movies">Movies</button><button class="cat" data-category="Viral">Viral</button>
+</nav>
+<main>
+ <section class="breaking-strip" aria-label="Latest"><span class="live-dot"></span><strong>LIVE FEED</strong><span id="breakingText">Loading latest updates…</span></section>
+ <section class="hero-grid">
+  <article class="hero-card">
+   <div class="hero-content"><span class="eyebrow">LATEST UPDATE</span><h1 id="heroTitle">Loading…</h1><p id="heroExcerpt">Latest posts from your connected feed will appear here.</p><div class="hero-meta"><span id="heroCategory">—</span><span>•</span><span id="heroTime">—</span></div><a id="heroLink" class="primary-btn" href="#" target="_blank" rel="noopener noreferrer">Open Instagram ↗</a></div>
+   <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+  </article>
+  <aside class="trend-card"><div class="section-head"><h2>Trending</h2><span>V1</span></div><div id="trendingList" class="trend-list"></div></aside>
+ </section>
+ <section class="section-head feed-head"><div><span class="eyebrow">YOUR FEED</span><h2>Latest posts</h2></div><span id="resultCount" class="count-pill">0 posts</span></section>
+ <section id="feed" class="feed-grid" aria-live="polite"></section>
+ <div class="empty-state hidden" id="emptyState"><div class="empty-icon">⌕</div><h3>No matching posts</h3><p>Try a different keyword or category.</p></div>
+ <div class="load-more-wrap"><button class="secondary-btn hidden" id="loadMoreBtn">Load more</button></div>
+</main>
+<footer class="site-footer"><div><strong>REALITY SHOW KE KHABAR</strong><p>Fast updates • Mobile-first • Instagram-ready</p></div><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></footer>
+<script src="app.js"></script>
+</body>
+</html>
